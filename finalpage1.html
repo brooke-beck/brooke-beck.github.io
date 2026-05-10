@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Roadblock: A Life Lived Enormously</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap stylesheet-->
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <!--My stylesheet-->
+        <link rel="stylesheet" href="final.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.jpeg" type="img/x-icon">
+        </head>
+            <div class="header">
+            <h1>Roadblock: A Life Lived Enormously</h1>
+            <h3><em>The Early Days</em></h3>
+            <button class="menu-toggle" onclick="toggleMenu()">Site Navigation</button>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                        Home Page
+                        </li></a>
+                    <li>
+                        <a href="finalpage1.html">
+                        The Early Days
+                    </li></a>
+                    <li>
+                        <a href="finalpage2.html">
+                        Well-Known Achievements
+                    </li></a>
+                    <li><a href="finalpage3.html">
+                        Livin' Large: An Autobiography
+                    </li></a>
+                    <li>
+                        <a href="finalpage4.html">
+                        Current Endeavors
+                    </li></a>
+                </ul>
+            </div>
+            <div class="content1">
+                <h3>The Early Days</h3>
+                <div class="images-content1">
+                <img src="blocconthetable.jpg" alt="Coffee Table for Scale" class="img-right">
+                </div>
+                <h5><em>Mystery Man</em></h5>
+                <p>Not much information is available about Roadblock's childhood, and he has shown little interest in sharing these details publicly. That has not, however, 
+                    stopped the media from speculating. </p>
+                <p>As legend has it, Roadblock never experienced traditional kittenhood; instead, many believe that he was born as he is today, fully-grown, weighing in at 
+                    an impressive 21 pounds <em>(see: image right)</em>. Other sources postulate that Roadblock was not born to a live mother at all, but was instead spawned into being by 
+                    a higher power. Roadblock's ethereal nature lends credence to this theory. </p>
+                <h5><em>What We Do Know</em></h5>
+                <p>As revealed by an anonymous source which described themselves as a close friend, Roadblock hails from New Jersey - a state from which he is now banned 
+                    <em>(see: Well-Known Achievements)</em>. Our anonymous source's first interaction with Roadblock occurred during the Great Snowfall of 1977, a time before 
+                    snowshovels or plow trucks had been invented. New Jersey saw 13 feet of snow that year. </p> 
+                <p>Noticing our source struggle to open their front door following the snowfall, Roadblock inhaled deeply and exhaled a breath so powerful that it melted all 13 feet of
+                    snow in our source's front lawn, thus allowing them to use their front door again. Their yard immediately flash-flooded and required extensive reconstruction, 
+                    but our source expresses deep gratitude towards Roadblock for his heroic actions. This individual can be quoted as saying, <em>"Roadblock saved 
+                    my life that day. I'm so totally grateful!"</em></p>
+                <p>This is the earliest recorded instance of Roadblock's philantropic endeavors.</p>
+            </div>
+            <div class="content2">
+                <h5><em>The first photo ever taken of Roadblock. A verified authentic Polaroid is on prominent display at the American Museum of Natural History in New York, 
+                New York.</em></h5>
+                <img src="verycloseblocc.jpg">
+            </div>
+            <div class="content3">
+                <h5><em>A rare image of Roadblock (front) in his kiwi.</em></h5>
+                <img src="kiwiblocc.jpg">
+            </div>
+            <!--Bootstrap Template for Contact Form-->
+            <div class="contactform">
+            <div class="container mt-4">
+            <div class="row">
+            <div class="col-md-11">
+            <h4>Get In Touch with Roadblock</h4>
+            <p>Send a personalized message to Roadblock himself!</p>
+            <form>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+            <label for="messageBox" class="form-label">Type your message here...</label>
+            <textarea class="form-control" id="messageBox" placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="submitAlert()">Submit</button>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="footer">
+                <h1>Thank you for visiting Roadblock's Website!</h1>
+            </div>
+            <script>
+                function submitAlert () {
+                    alert("Message sent! Roadblock appreciates your time in sending him a message.")
+                }
+                function toggleMenu () {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.classList.toggle('open');
+                }
+            </script>
+        </body>
+        </html>

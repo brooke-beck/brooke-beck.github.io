@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Roadblock: A Life Lived Enormously</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap stylesheet-->
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <!--My stylesheet-->
+        <link rel="stylesheet" href="final.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.jpeg" type="img/x-icon">
+        </head>
+            <div class="header">
+            <h1>Roadblock: A Life Lived Enormously</h1>
+            <h3><em>Livin' Large: An Autobiography</em></h3>
+            <button class="menu-toggle" onclick="toggleMenu()">Site Navigation</button>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                        Home Page
+                        </li></a>
+                    <li>
+                        <a href="finalpage1.html">
+                        The Early Days
+                    </li></a>
+                    <li>
+                        <a href="finalpage2.html">
+                        Well-Known Achievements
+                    </li></a>
+                    <li><a href="finalpage3.html">
+                        Livin' Large: An Autobiography
+                    </li></a>
+                    <li>
+                        <a href="finalpage4.html">
+                        Current Endeavors
+                    </li></a>
+                </ul>
+            </div>
+            <div class="content1">
+                <h3>Livin' Large: An Autobiography</h3>
+                <div class="images-content1">
+                <img src="bookcover.png" alt="Livin' Large: An Autobiography" class="img-right-book">
+                </div>
+                <p>Since its release in 2020, Roadblock's book <em>Livin' Large: An Autobiography</em> has consistently earned a spot on the <em>New York Times</em> weekly Bestseller 
+                list. As of 2025, over 7 billion copies have been sold worldwide.</p>
+                <h5><em>Contents & Societal Impact</em></h5>
+                <p><em>Livin' Large: An Autobiography</em> details Roadblock's journey from rags to moderately well-off. From the first public record of his existence in 1977 to 
+                his latest antics, <em>Livin' Large: An Autobiography</em> takes us through every high, every low, and every just-okay time in Roadblock's life.</p>
+                <p>Readers note that unlike other celebrities of his caliber, Roadblock does not shy away from discussing the everyday issues we all face in this world and refuse to 
+                address in any meaningful way. In chapter 17, Roadblock opens up about the struggle of finding a doctor who would not dismiss his health concerns due to his weight. 
+                Similarly, chapter 21 recalls the details of intensive therapy Roadblock had undergone to overcome his fear of mice. In this chapter, Roadblock writes:</p>
+                    <div class="book">
+                        <em>
+                        <p>
+                        I couldn't understand it, mice are the natural foe of cat - intended to be hunted, toyed with, eaten - and yet, the thought of encountering one struck fear in me. 
+                        For so long, I had felt shame in my fear. I didn't feel like I could confide in my friends to help me for fear of embarrassment. So, I did what any forward-thinking 
+                        individual would do. I Googled psychologists near me, picked the topmost name on the list, drove out to their office, and chained myself to their desk until they 
+                        agreed to treat me. I stayed in that office for three weeks undergoing intensive behavioral therapy.
+                        </em>
+                        </p>
+                    </div>
+                <p><em>Livin' Large: An Autobiography</em> made waves on a very human level. Since its release, new legislation has been introduced which aims to ban mice from 
+                cat-owned spaces and vice versa. Additionally, Roadblock's candid assessment of how overweight cats can be treated has sparked conversation in the veterinary world.</p>
+                <p>The book is dedicated to one of Roadblock's friends, Flint. It is believed that Flint has been instrumental in Roadblock's success, although Roadblock has not commented 
+                    on Flint's identity publicly. Fans speculate that this is to protect Flint's privacy.</p>
+                <p>Although unconfirmed, it is rumored that Roadblock's book never went through editing - it was declared flawless the first time it was presented to the 
+                    publishers. Some sources claim that Roadblock drafted, wrote, and edited the book entirely in his head before ever putting it on paper <em>(see: below)</em>. </p>
+            </div>
+            <div class="content2">
+                <h5><em>Roadblock enjoying a celebratory catnip treat shortly after his book release.</em></h5>
+                <img src="chaoticblocc.jpg">
+            </div>
+            <div class="content3">
+                <h5><em>An alleged photo of Roadblock thinking up his book before writing the perfect first edition.
+                </em></h5>
+                <img src="loungingblocc.jpg">
+            </div>
+            <!--Bootstrap Template for Contact Form-->
+            <div class="contactform">
+            <div class="container mt-4">
+            <div class="row">
+            <div class="col-md-11">
+            <h4>Get In Touch with Roadblock</h4>
+            <p>Send a personalized message to Roadblock himself!</p>
+            <form>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+            <label for="messageBox" class="form-label">Type your message here...</label>
+            <textarea class="form-control" id="messageBox" placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="submitAlert()">Submit</button>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="footer">
+                <h1>Thank you for visiting Roadblock's Website!</h1>
+            </div>
+            <script>
+                function submitAlert () {
+                    alert("Message sent! Roadblock appreciates your time in sending him a message.")
+                }
+                function toggleMenu () {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.classList.toggle('open'); 
+                }
+            </script>
+        </body>
+        </html>

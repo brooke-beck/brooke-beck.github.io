@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Roadblock: A Life Lived Enormously</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap stylesheet-->
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <!--My stylesheet-->
+        <link rel="stylesheet" href="final.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.jpeg" type="img/x-icon">
+        </head>
+            <div class="header">
+            <h1>Roadblock: A Life Lived Enormously</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">Site Navigation</button>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                        Home Page
+                        </li></a>
+                    <li>
+                        <a href="finalpage1.html">
+                        The Early Days
+                    </li></a>
+                    <li>
+                        <a href="finalpage2.html">
+                        Well-Known Achievements
+                    </li></a>
+                    <li><a href="finalpage3.html">
+                        Livin' Large: An Autobiography
+                    </li></a>
+                    <li>
+                        <a href="finalpage4.html">
+                        Current Endeavors
+                    </li></a>
+                </ul>
+            </div>
+            <div class="content1">
+                <h3>About Roadblock</h3>
+                <div class="images-content1">
+                <img src="curiousblocc.jpg" alt="Curious Roadblock" class="img-right">
+                <img src="startledblocc.jpg" alt="Startled Roadblock" class="img-right">
+                </div>
+                <p>Roadblock ("/ˈrōdˌbläk/", born many years ago) is an accomplished American singer, songwriter, actor, businessman, philantropist, 
+                    scholar, influencer, racecar driver, politician, ordained minister, motivational speaker, RQ7 Bravo-V2 Crew Chief, and orthopedic surgeon. </p>
+                <p>Referred to as "Blocc" by his closest friends, he is most widely recognized for his best-selling novel, "Livin' Large: An Autobiography", 
+                    which details Roadblock's personal journey from rags to moderately well-off. With over 7 billion copies of his book sold, Roadblock's 
+                    fans note the following as the most influential excerpt:</p>
+                    <div class="book">
+                        <em>
+                        <p>
+                        Who Is Roadblock? <br>
+                        Roadblock is the first ray of sunshine which pours through your window, rousing you at daybreak. <br>
+                        Roadblock is the surprise french fry at the bottom of your takeout bag. <br>
+                        Roadblock is 3 children in a trenchcoat who keep asking to "borrow" your ID. <br>
+                        Roadblock is a threat to democracy. <br>
+                        Roadblock is a 2023 Dodge Charger SXT with louvres and a carbon fiber spoiler. <br>
+                        Roadblock is outlawed in the American state of New Jersey. <br>
+                        Roadblock is a harbinger of peace, of chaos, of love. 
+                        </em>
+                        </p>
+                    </div>
+                <p>Musical works of Roadblock's include his 2010 album <em>Scared of Loud Noises</em>, which features hit singles "Vacuum Cleaner Sorrow", 
+                    "Garbage Disposal Blues", and "Stop Yelling at The Computer (It Can't Hear You)"; and his 2017 album <em>Catnip</em>, which features hit 
+                    singles "Smack That", "Tap That", and "Big Money Cat".</p>
+                <p>In 2013, Roadblock made the FBI's Most Wanted list for allegedly defrauding a number of victims out of thousands of dollars in a mail fraud scheme. 
+                    Upon capture, Roadblock informed his accusers that he simply did not commit the crime, and the charges were dropped. </p>
+                <p>Those closest to Roadblock say that despite his fame, he is actually very shy. When he is not working, Roadblock enjoys trying new foods, lounging 
+                    atop the sofa, and aquatic aerobics. Roadblock's favorite TV show is <em>Dexter</em> (the original series), and his favorite movie is <em>Gentleman Broncos</em>.</p>
+            </div>
+            <div class="content2">
+                <h5><em>Pictured: Roadblock and one of his very best friends, Torpedo.</em></h5>
+                <img src="bitingblocc.jpg">
+            </div>
+            <div class="content3">
+                <h5><em>Pictured: Roadblock with another of his very best friends, Bazooka.</em></h5>
+                <img src="bloccplaying.jpg">
+            </div>
+            <!--Bootstrap Template for Contact Form-->
+            <div class="contactform">
+            <div class="container mt-4">
+            <div class="row">
+            <div class="col-md-11">
+            <h4>Get In Touch with Roadblock</h4>
+            <p>Send a personalized message to Roadblock himself!</p>
+            <form>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+            <label for="messageBox" class="form-label">Type your message here...</label>
+            <textarea class="form-control" id="messageBox" placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="submitAlert()">Submit</button>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="footer">
+                <h1>Thank you for visiting Roadblock's Website!</h1>
+            </div>
+            <script>
+                function submitAlert () {
+                    alert("Message sent! Roadblock appreciates your time in sending him a message.")
+                }
+                function toggleMenu () {
+                    const sidebar = document.querySelector('.sidebar');
+                    sidebar.classList.toggle('open');
+                }
+            </script>
+        </body>
+        </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Roadblock: A Life Lived Enormously</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap stylesheet-->
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <!--My stylesheet-->
+        <link rel="stylesheet" href="final.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.jpeg" type="img/x-icon">
+        </head>
+            <div class="header">
+            <h1>Roadblock: A Life Lived Enormously</h1>
+            <h3><em>Current Endeavors</em></h3>
+            <button class="menu-toggle" onclick="toggleMenu()">Site Navigation</button>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                        Home Page
+                        </li></a>
+                    <li>
+                        <a href="finalpage1.html">
+                        The Early Days
+                    </li></a>
+                    <li>
+                        <a href="finalpage2.html">
+                        Well-Known Achievements
+                    </li></a>
+                    <li><a href="finalpage3.html">
+                        Livin' Large: An Autobiography
+                    </li></a>
+                    <li>
+                        <a href="finalpage4.html">
+                        Current Endeavors
+                    </li></a>
+                </ul>
+            </div>
+            <div class="content1">
+                <h3>Current Endeavors</h3>
+                <div class="images-content1">
+                <img src="blocconputer.jpg" alt="Roadblock Doing What Appears to be Coding" class="img-right">
+                </div>
+                <p>These days, Roadblock can most often be found relaxing in the comfort of his Pennsylvania home. Unconfirmed rumors speculate that Roadblock might be working 
+                    on another tech project. These rumors are the result of an image posted to Reddit with the caption, "Blocc on Puter". Once the post began to garner 
+                    attention, it was removed - but the similarity between the individual in the photo and Roadblock is uncanny. The image appears to depict Roadblock himself 
+                    sat in front of a keyboard, monitor, and mouse (!). Upon zooming into the photo, some viewers claim to be able to see computer code typed on the screen. 
+                    Roadblock has not commented on this. </p>
+                <p>Other recent updates from Roadblock indicate that he trying to enjoy the quiet life. One <em>X</em> post from his account reads, "I'm not ignoring you, 
+                I'm just prioritizing me. #BlockedByRoadblock". Although we cannot confirm at this time who this post was directed at, some believe it was indirect 
+                commentary surrounding cell phones, social media, and texting - the way these things have shaped our interactions with each other. The constant connection 
+                that technology provides can be a detriment to those of us who prefer to be left alone most of the time.</p>
+                <p>Aside from breaking the Internet, Roadblock has confirmed that he is planning on releasing his next album in 2027. In a June 2025 interview on <em>Good 
+                    Morning America</em>, Roadblock stated that he has been exploring new genres as of late - namely, R&B and Tuvan throat singing. Fans eagerly await the drop 
+                    of his next album.</p>
+            </div>
+            <div class="content2-special">
+                <div id="id">
+                <h5><em>Roadblock in 2025: Gallery</em></h5>
+                </div>
+                <img src="crazyblocc.jpg" alt="Crazy Clean Roadblock">
+                <img src="bingchillinblocc.jpg" alt="Roadblock Chillin">
+            </div>
+            <div class="content3-special">
+                <img src="bloccportrait.jpg" alt="A Very Flattering Photo of Roadblock">
+                <img src="donuttimeblocc.jpg" alt="Roadblock Sleeping">
+            </div>
+            <!--Bootstrap Template for Contact Form-->
+            <div class="contactform">
+            <div class="container mt-4">
+            <div class="row">
+            <div class="col-md-11">
+            <h4>Get In Touch with Roadblock</h4>
+            <p>Send a personalized message to Roadblock himself!</p>
+            <form>
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+            <label for="messageBox" class="form-label">Type your message here...</label>
+            <textarea class="form-control" id="messageBox" placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="submitAlert()">Submit</button>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="footer">
+                <h1>Thank you for visiting Roadblock's Website!</h1>
+            </div>
+            <script>
+                function submitAlert () {
+                    alert("Message sent! Roadblock appreciates your time in sending him a message.")
+                }
+                let opacity = 1;
+                let fadingOut = true;
+
+                setInterval (function() {
+                    const element = document.getElementById("id");
+                    if (fadingOut) {
+                        opacity -= 0.02;
+                        if (opacity <= 0.3) fadingOut = false;
+                    }
+                    else {
+                        opacity += 0.02;
+                        if (opacity >= 1) fadingOut = true;
+                    }
+                    element.style.opacity = opacity;
+                }, 50);
+                function toggleMenu () {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.classList.toggle('open'); 
+                }
+            </script>
+        </body>
+        </html>
